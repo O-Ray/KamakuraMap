@@ -4,7 +4,6 @@ body{ /*全てのbody */
 }
 
 #searchBody{
-  text-align: left;
 }
 
 .logoImg{ /*ロゴのimg*/
@@ -16,6 +15,7 @@ body{ /*全てのbody */
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: 100% 100%;
+  text-align: left;
 }
 
 /* メニュー表示アイコン(ネットからのコピペ) */

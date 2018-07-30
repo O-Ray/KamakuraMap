@@ -214,7 +214,8 @@ $(function () {
 
       // 検索結果をページに出力
       for (var i = 0; i < searchResult.length; i ++) {
-        $('<span>').text(searchResult[i]).appendTo('#search-result__list');
+        const idNumber = dataReserve(searchResult[i]);
+        $('<span onclick="dataIn(' + idNumber + ')">').text(searchResult[i]).appendTo('#search-result__list');
       }
 
       // ヒットの件数をページに出力
@@ -227,6 +228,32 @@ $(function () {
   $('#search-text').on('input', searchWord);
 });
 
-function movement(num){
+
+
+
+
+function movement(num){//num(~.html)に移動する
   location.href = num;
+}
+
+function dataReserve(num){
+  for (var i = 0; i < 118; i++) {
+    if(data[i][0] === num){
+      return i;
+    }
+  }
+}
+
+function dataIn(num){//data.htmlに入る前に、dataの配列番号を入れる
+  localStorage.setItem('dataNumber', num);
+  movement("data.html");
+}
+
+function dataOnload(){//data.htmlに入った時にデータの配列番号を入手し表示する
+  const dataNumber = localStorage.getItem('dataNumber');
+  console.log(data[dataNumber][0]);
+  $("#name").text(data[dataNumber][0]);
+  $("#live").text(data[dataNumber][1]);
+  $("#souken").text(data[dataNumber][2]);
+  $("#syuha").text(data[dataNumber][3]);
 }
