@@ -1,5 +1,10 @@
 body{ /*全てのbody */
   text-align: center;
+  color: white;
+}
+
+#searchBody{
+  text-align: left;
 }
 
 .logoImg{ /*ロゴのimg*/
@@ -108,22 +113,37 @@ body{ /*全てのbody */
   display: none;
 }
 
-.searchBox{
+/*  */
+
+.search-area input[type="text"] {
+  padding: 5px 5px 3px;
   font-size: 40px;
-  position: absolute;
-  background-color: #ffcece;
-  z-index: 100;
-  top: 300px;
-  left: 100px;
-  width: 500px;
+  border: 1px solid #ffcece;
 }
 
-.searchButton{
+.search-area input[type="text"]:focus {
+  background: white;
+}
+
+.search-result {
+  margin-top: 20px;
+}
+.search-result__hit-num span {
+  font-weight: bold;
   font-size: 40px;
-  position: absolute;
-  background-color: #ffcece;
-  z-index: 100;
-  top: 300px;
-  left: 650px;
-  width: 4em;
+}
+#search-result__list {
+  margin-top: 15px;
+}
+#search-result__list span {
+  display: inline-block;
+  margin-right: 15px;
+  padding: 5px;
+}
+.target-area {
+  margin-top: 50px;
+}
+
+a,li,p{
+  font-size: 40px;
 }

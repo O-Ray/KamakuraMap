@@ -5,137 +5,151 @@
 	<link href="css/style.css" rel="stylesheet">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
-<body class="indexBody">
+<body class="indexBody" id="searchBody">
 	<div class="menuWrapper" onclick="menuClick()">
 	  <a href="#menu" id="menuButton"><span>MENU</span></a>
 	</div><br>
 	<div class="menu">
+	</div>
+	<br><br><br><br><br>
 
-	</div><br>
-	<form>
-		<input type="search" name="name" list="example" class="searchBox"　autocomplete="off">
-		<datalist id="example">
-			<option value='安国論寺'></option>
-			<option value='安養院'></option>
-			<option value='雲頂庵'></option>
-			<option value='英勝寺'></option>
-			<option value='荏原天神社'></option>
-			<option value='延応寺'></option>
-			<option value='円覚寺'></option>
-			<option value='永久寺'></option>
-			<option value='円光寺'></option>
-			<option value='円命寺'></option>
-			<option value='黄梅院'></option>
-			<option value='大船観音寺'></option>
-			<option value='回春院'></option>
-			<option value='海蔵寺'></option>
-			<option value='覚園寺'></option>
-			<option value='鎌倉宮'></option>
-			<option value='勧行寺'></option>
-			<option value='帰源院'></option>
-			<option value='教恩寺'></option>
-			<option value=' 玉泉寺'></option>
-			<option value='久成寺'></option>
-			<option value='九品寺'></option>
-			<option value='葛原岡神社'></option>
-			<option value='啓運寺'></option>
-			<option value='顕証寺'></option>
-			<option value='建長寺'></option>
-			<option value='光照寺'></option>
-			<option value='光触寺'></option>
-			<option value='光則寺'></option>
-			<option value='高徳院'></option>
-			<option value='向福寺'></option>
-			<option value='光明寺'></option>
-			<option value='極楽寺'></option>
-			<option value='護国寺'></option>
-			<option value='五社稲荷神社'></option>
-			<option value='小動神社'></option>
-			<option value='御霊神社'></option>
-			<option value='西念寺'></option>
-			<option value='佐助稲荷'></option>
-			<option value='実相寺'></option>
-			<option value='収玄寺'></option>
-			<option value='寿徳庵'></option>
-			<option value='寿福寺'></option>
-			<option value='常栄寺'></option>
-			<option value='松久寺'></option>
-			<option value='上行寺'></option>
-			<option value='浄光明寺'></option>
-			<option value='成就院'></option>
-			<option value='昌清院'></option>
-			<option value='浄泉寺'></option>
-			<option value='浄智寺'></option>
-			<option value='正伝庵'></option>
-			<option value='正統院'></option>
-			<option value='成福寺'></option>
-			<option value='称名寺'></option>
-			<option value='浄妙寺'></option>
-			<option value='常楽寺'></option>
-			<option value='松嶺院'></option>
-			<option value='青蓮寺'></option>
-			<option value='瑞泉寺'></option>
-			<option value='杉本寺'></option>
-			<option value='禅居院'></option>
-			<option value='銭洗弁天'></option>
-			<option value='泉光寺'></option>
-			<option value='千手院'></option>
-			<option value='大巧寺'></option>
-			<option value='大慶寺'></option>
-			<option value='大長寺'></option>
-			<option value='大宝寺'></option>
-			<option value='田代寺'></option>
-			<option value='多聞寺'></option>
-			<option value='長寿寺'></option>
-			<option value='長勝寺'></option>
-			<option value='鶴岡八幡宮'></option>
-			<option value='貞宗寺'></option>
-			<option value='天源院'></option>
-			<option value='等覚寺'></option>
-			<option value='東慶寺'></option>
-			<option value='東漸寺'></option>
-			<option value='長谷寺'></option>
-			<option value='白雲庵'></option>
-			<option value='蛭子神社'></option>
-			<option value='補蛇落寺'></option>
-			<option value='仏行寺'></option>
-			<option value='仏日庵'></option>
-			<option value='富陽庵'></option>
-			<option value='別願寺'></option>
-			<option value='宝戒寺'></option>
-			<option value='法源寺'></option>
-			<option value='報国寺'></option>
-			<option value='宝珠院'></option>
-			<option value='宝善院'></option>
-			<option value='本覚寺'></option>
-			<option value='本行寺'></option>
-			<option value='本興寺'></option>
-			<option value='本成寺'></option>
-			<option value='本龍寺'></option>
-			<option value='満福寺'></option>
-			<option value='明王院'></option>
-			<option value='妙高院'></option>
-			<option value='妙長寺'></option>
-			<option value='妙典寺'></option>
-			<option value='妙伝寺'></option>
-			<option value='妙法寺'></option>
-			<option value='妙法寺'></option>
-			<option value='妙本寺'></option>
-			<option value='妙隆寺'></option>
-			<option value='明月院'></option>
-			<option value='黙仙寺'></option>
-			<option value='薬王寺'></option>
-			<option value='八雲神社'></option>
-			<option value='来迎寺'></option>
-			<option value='来迎寺'></option>
-			<option value='瀧口明神社'></option>
-			<option value='龍峰院'></option>
-			<option value='竜宝寺'></option>
-			<option value='霊光寺'></option>
-			<option value='蓮乗院'></option>
-		</datalist>
-		<button type="button" class="searchButton">Search</button>
-</form>
+
+
+	<div class="wrapper">
+    <div class="search-area">
+      <form>
+        <input type="text" id="search-text" placeholder="検索ワードを入力">
+      </form>
+      <div class="search-result">
+        <div class="search-result__hit-num"></div>
+        <div id="search-result__list"></div>
+      </div>
+    </div>
+
+    <ul class="target-area">
+			<li><a href='#'>安国論寺</a></li>
+			<li><a href='#'>安養院</a></li>
+			<li><a href='#'>雲頂庵</a></li>
+			<li><a href='#'>英勝寺</a></li>
+			<li><a href='#'>荏原天神社</a></li>
+			<li><a href='#'>延応寺</a></li>
+			<li><a href='#'>円覚寺</a></li>
+			<li><a href='#'>永久寺</a></li>
+			<li><a href='#'>円光寺</a></li>
+			<li><a href='#'>円命寺</a></li>
+			<li><a href='#'>黄梅院</a></li>
+			<li><a href='#'>大船観音寺</a></li>
+			<li><a href='#'>回春院</a></li>
+			<li><a href='#'>海蔵寺</a></li>
+			<li><a href='#'>覚園寺</a></li>
+			<li><a href='#'>鎌倉宮</a></li>
+			<li><a href='#'>勧行寺</a></li>
+			<li><a href='#'>帰源院</a></li>
+			<li><a href='#'>教恩寺</a></li>
+			<li><a href='#'> 玉泉寺</a></li>
+			<li><a href='#'>久成寺</a></li>
+			<li><a href='#'>九品寺</a></li>
+			<li><a href='#'>葛原岡神社</a></li>
+			<li><a href='#'>啓運寺</a></li>
+			<li><a href='#'>顕証寺</a></li>
+			<li><a href='#'>建長寺</a></li>
+			<li><a href='#'>光照寺</a></li>
+			<li><a href='#'>光触寺</a></li>
+			<li><a href='#'>光則寺</a></li>
+			<li><a href='#'>高徳院</a></li>
+			<li><a href='#'>向福寺</a></li>
+			<li><a href='#'>光明寺</a></li>
+			<li><a href='#'>極楽寺</a></li>
+			<li><a href='#'>護国寺</a></li>
+			<li><a href='#'>五社稲荷神社</a></li>
+			<li><a href='#'>小動神社</a></li>
+			<li><a href='#'>御霊神社</a></li>
+			<li><a href='#'>西念寺</a></li>
+			<li><a href='#'>佐助稲荷</a></li>
+			<li><a href='#'>実相寺</a></li>
+			<li><a href='#'>収玄寺</a></li>
+			<li><a href='#'>寿徳庵</a></li>
+			<li><a href='#'>寿福寺</a></li>
+			<li><a href='#'>常栄寺</a></li>
+			<li><a href='#'>松久寺</a></li>
+			<li><a href='#'>上行寺</a></li>
+			<li><a href='#'>浄光明寺</a></li>
+			<li><a href='#'>成就院</a></li>
+			<li><a href='#'>昌清院</a></li>
+			<li><a href='#'>浄泉寺</a></li>
+			<li><a href='#'>浄智寺</a></li>
+			<li><a href='#'>正伝庵</a></li>
+			<li><a href='#'>正統院</a></li>
+			<li><a href='#'>成福寺</a></li>
+			<li><a href='#'>称名寺</a></li>
+			<li><a href='#'>浄妙寺</a></li>
+			<li><a href='#'>常楽寺</a></li>
+			<li><a href='#'>松嶺院</a></li>
+			<li><a href='#'>青蓮寺</a></li>
+			<li><a href='#'>瑞泉寺</a></li>
+			<li><a href='#'>杉本寺</a></li>
+			<li><a href='#'>禅居院</a></li>
+			<li><a href='#'>銭洗弁天</a></li>
+			<li><a href='#'>泉光寺</a></li>
+			<li><a href='#'>千手院</a></li>
+			<li><a href='#'>大巧寺</a></li>
+			<li><a href='#'>大慶寺</a></li>
+			<li><a href='#'>大長寺</a></li>
+			<li><a href='#'>大宝寺</a></li>
+			<li><a href='#'>田代寺</a></li>
+			<li><a href='#'>多聞寺</a></li>
+			<li><a href='#'>長寿寺</a></li>
+			<li><a href='#'>長勝寺</a></li>
+			<li><a href='#'>鶴岡八幡宮</a></li>
+			<li><a href='#'>貞宗寺</a></li>
+			<li><a href='#'>天源院</a></li>
+			<li><a href='#'>等覚寺</a></li>
+			<li><a href='#'>東慶寺</a></li>
+			<li><a href='#'>東漸寺</a></li>
+			<li><a href='#'>長谷寺</a></li>
+			<li><a href='#'>白雲庵</a></li>
+			<li><a href='#'>蛭子神社</a></li>
+			<li><a href='#'>補蛇落寺</a></li>
+			<li><a href='#'>仏行寺</a></li>
+			<li><a href='#'>仏日庵</a></li>
+			<li><a href='#'>富陽庵</a></li>
+			<li><a href='#'>別願寺</a></li>
+			<li><a href='#'>宝戒寺</a></li>
+			<li><a href='#'>法源寺</a></li>
+			<li><a href='#'>報国寺</a></li>
+			<li><a href='#'>宝珠院</a></li>
+			<li><a href='#'>宝善院</a></li>
+			<li><a href='#'>本覚寺</a></li>
+			<li><a href='#'>本行寺</a></li>
+			<li><a href='#'>本興寺</a></li>
+			<li><a href='#'>本成寺</a></li>
+			<li><a href='#'>本龍寺</a></li>
+			<li><a href='#'>満福寺</a></li>
+			<li><a href='#'>明王院</a></li>
+			<li><a href='#'>妙高院</a></li>
+			<li><a href='#'>妙長寺</a></li>
+			<li><a href='#'>妙典寺</a></li>
+			<li><a href='#'>妙伝寺</a></li>
+			<li><a href='#'>妙法寺</a></li>
+			<li><a href='#'>妙法寺</a></li>
+			<li><a href='#'>妙本寺</a></li>
+			<li><a href='#'>妙隆寺</a></li>
+			<li><a href='#'>明月院</a></li>
+			<li><a href='#'>黙仙寺</a></li>
+			<li><a href='#'>薬王寺</a></li>
+			<li><a href='#'>八雲神社</a></li>
+			<li><a href='#'>来迎寺</a></li>
+			<li><a href='#'>来迎寺</a></li>
+			<li><a href='#'>瀧口明神社</a></li>
+			<li><a href='#'>龍峰院</a></li>
+			<li><a href='#'>竜宝寺</a></li>
+			<li><a href='#'>霊光寺</a></li>
+			<li><a href='#'>蓮乗院</a></li>
+    </ul>
+  </div><!-- /.wrapper -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+</body>
 <script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>
