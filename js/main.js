@@ -7,7 +7,7 @@ function move(){//ロゴの画像を大きくしていく関数
   width += 0.3;//10ミリ秒ごとに0.3増やす
   $('.logoImg').css('width',width + "%");
   if(width >= 100){
-    location.href = 'index.html';
+    movement("index.html");
   }
 }
 
@@ -226,3 +226,7 @@ $(function () {
   // searchWordの実行
   $('#search-text').on('input', searchWord);
 });
+
+function movement(num){
+  location.href = num;
+}

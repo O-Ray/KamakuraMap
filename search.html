@@ -12,8 +12,22 @@
 	  <a href="#menu" id="menuButton"><span>MENU</span></a>
 	</div><br>
 	<div class="menu">
+		<table>
+			<tr>
+				<td onclick='movement("start.html")'>Start</td>
+			</tr>
+			<tr>
+				<td onclick='movement("map.html")'>Map</td>　<!-- mapにかえる -->
+			</tr>
+			<tr>
+				<td onclick='movement("search.html")'>Search</td>
+			</tr>
+			<tr>
+				<td onclick='movement("point.html")'>Point</td>　<!-- Pointにかえる -->
+			</tr>
+		</table>
 	</div>
-	<br><br><br><br><br>
+	<br><br>
 
 
 
@@ -23,7 +37,7 @@
         <input type="text" id="search-text" placeholder="検索ワードを入力">
       </form>
       <div class="search-result">
-        <div class="search-result__hit-num"></div>
+        <div class="search-result__hit-num" style="font-size: 80px;"></div>
         <div id="search-result__list"></div>
       </div>
     </div>
