@@ -6,7 +6,7 @@ let width = 0;//start.html　にある logoの写真の横幅(%指定)
 function move(){//ロゴの画像を大きくしていく関数
   width += 0.3;//10ミリ秒ごとに0.3増やす
   $('.logoImg').css('width',width + "%");
-  if(width >= 100){
+  if(width >= 80){
     movement("index.html");
   }
 }
@@ -34,6 +34,10 @@ function menuClick(){//メニュー表示アイコンが押されたら動く
   }
 }
 
+
+function runFunc(){
+  alert('hhhhhhhhhhhhhh');
+}
 
 
 
