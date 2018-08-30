@@ -7,7 +7,7 @@ function move(){//ロゴの画像を大きくしていく関数
   width += 0.3;//10ミリ秒ごとに0.3増やす
   $('.logoImg').css('width',width + "%");
   if(width >= 80){
-    movement("index.html");
+    movement("map1.html");
   }
 }
 
@@ -30,8 +30,11 @@ function menuClick(){//メニュー表示アイコンが押されたら動く
   if(menuDisplay){//trueだったら...
     $('.menu').css('display','inline');//メニューを表示
     $('.maps').css('display','none');//マップを非表示
+    $('.wrapper').css('display','none');//サーチを非表示
   }else{//falseだったら...
     $('.menu').css('display','none');//メニューを非表示
+    $('.maps').css('display','inline');//マップを表示
+    $('.wrapper').css('display','inline');//サーチを表示
   }
 }
 
