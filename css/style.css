@@ -41,7 +41,7 @@ body{ /*全てのbody */
   width: 140px;
   height: 140px;
   cursor: pointer;
-  background-color: #ffffff;
+  /* background-color: #ffffff; */
   border-radius: 20px;
 }
 
@@ -57,7 +57,7 @@ body{ /*全てのbody */
   width: 100px;
   height: 15px;
   margin: auto;
-  background: #FFB145;
+  background: #ffffff;
 }
 #menuButton span {
   overflow: hidden;
@@ -110,7 +110,7 @@ body{ /*全てのbody */
   position: fixed;
   top: 200px;
   left: 0px;
-  background-color: white;
+  /* background-color: white; */
   display: none;
 }
 
@@ -148,11 +148,18 @@ a,li,p,td{
   font-size: 40px;
 }
 td{
-  color: orange;
+  color: white;
   height: 100px;
   font-size: 80px;
 }
 
 span{
   font-size: 80px;
+}
+iframe{
+  width: 100%;
+  height: 1200px;
+  position: absolute;
+  top: 300px;
+  left: 0px;
 }
